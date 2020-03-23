@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   get 'todolists' => 'todolists#index'
 #todolistsの投稿詳細画面
   get 'todolists/:id' => 'todolists#show', as:'todolist'
+#todolistsの編集画面
+  get 'todolists/:id/edit' => 'todolists#edit', as:'edit_todolist'
 end
